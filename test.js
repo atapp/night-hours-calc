@@ -16,7 +16,7 @@ var date = new Date('2018-03-05UTC'),
     arrLat = 51.4775,
     arrLng = -0.461389;
     
-t.test('getTimes returns day and night times for the given date and time string and location', function (t) {
+t.test('getTimes returns day and night times for the given date and time string and locations', function (t) {
     var nightTime = nightCalc.getTimes(date, depTimeString, depLat, depLng, arrLat, arrLng);
 
     t.ok(equal(nightTime.day, -2.5003175907168385), 'day time');
