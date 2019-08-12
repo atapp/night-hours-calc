@@ -1,0 +1,22 @@
+{
+  "name": "night-hours-calc",
+  "version": "1.0.0",
+  "description": "Calculate aircraft night hours based on location of departure and recovery and civil twilight.",
+  "main": "nighthourscalc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atapp/night-hours-calc.git"
+  },
+  "author": "Simon Hogg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atapp/night-hours-calc/issues"
+  },
+  "homepage": "https://github.com/atapp/night-hours-calc#readme",
+  "dependencies": {
+    "tap": "^14.6.1"
+  }
+}
