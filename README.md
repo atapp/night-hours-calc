@@ -43,5 +43,5 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Install
 
     $ git clone https://github.com/atapp/night-hours-calc
-    $ cd PROJECT_TITLE
+    $ cd night-hours-calc
     $ npm install
