@@ -5,7 +5,7 @@ Calculate aircraft night hours based on location of departure and recovery and c
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js
 
 ### Node
 - #### Node installation on Windows
