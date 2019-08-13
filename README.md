@@ -1,7 +1,4 @@
 # Night Hours Calculator
-night-hours-calc
-
-# Project Title
 
 Calculate aircraft night hours based on location of departure and recovery and civil twilight.
 
