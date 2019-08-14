@@ -37,8 +37,17 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 
 ---
 
-## Install
+## Usage
 
-    $ git clone https://github.com/atapp/night-hours-calc
-    $ cd night-hours-calc
-    $ npm install
+Import into your project.
+
+@param Date() depDate A date object of the local time of departure.
+@param Date() arrDate A date object of the local time of arrival.
+@param Number depLat Departure latitude in decimal.
+@param Number depLng Departure longitude in decimal.
+@param Number arrLat Arrival latitude in decimal.
+@param Number arrLng Ariival longitude in decimal.
+
+let nightCalculation = nightCalc.getTimes(depDate, arrDate, depLat, depLng, arrLat, arrLng);
+
+let nightTime = nightCalculation.night;
