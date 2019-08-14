@@ -2,6 +2,8 @@
 
 Calculate aircraft night hours based on location of departure and recovery and civil twilight.
 
+Does not account for altitude changes. V2 will incorporate Meeus Astronomical Algorithms.
+
 ---
 ## Requirements
 
@@ -41,13 +43,17 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 
 Import into your project.
 
-@param Date() depDate A date object of the local time of departure.
-@param Date() arrDate A date object of the local time of arrival.
-@param Number depLat Departure latitude in decimal.
-@param Number depLng Departure longitude in decimal.
-@param Number arrLat Arrival latitude in decimal.
-@param Number arrLng Ariival longitude in decimal.
+    var nightCalc = require('./nighthourscalc'),
 
-let nightCalculation = nightCalc.getTimes(depDate, arrDate, depLat, depLng, arrLat, arrLng);
+    @param Date() depDate A date object of the local time of departure.
+    @param Date() arrDate A date object of the local time of arrival.
+    @param Number depLat Departure latitude in decimal.
+    @param Number depLng Departure longitude in decimal.
+    @param Number arrLat Arrival latitude in decimal.
+    @param Number arrLng Ariival longitude in decimal.
+    @return Object Returns a object {Number night (total night time), String error (can be null)}
 
-let nightTime = nightCalculation.night;
+    let nightCalculation = nightCalc.getTimes(depDate, arrDate, depLat, depLng, arrLat, arrLng);
+
+    let nightTime = nightCalculation.night;
+    let nightError = nightCalculation.error;
