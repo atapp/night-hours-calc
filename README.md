@@ -55,6 +55,15 @@ Import into your project.
     *@return Object Returns a object {Number night (total night time), String error (can be null)}
     **/
 
+    var depDate = new Date('2018-03-05T15:45:00'),
+    arrDate = new Date('2018-03-06T06:00:00'),
+    //Portland
+    depLat = 45.588611,
+    depLng = -122.5975,
+    //London
+    arrLat = 51.4775,
+    arrLng = -0.461389;
+    
     let nightCalculation = nightCalc.getTimes(depDate, arrDate, depLat, depLng, arrLat, arrLng);
 
     let nightTime = nightCalculation.night;
