@@ -44,14 +44,16 @@ If you need to update `npm`, you can make it using `npm`! After running the foll
 Import into your project.
 
     var nightCalc = require('./nighthourscalc'),
-
-    @param Date() depDate A date object of the local time of departure.
-    @param Date() arrDate A date object of the local time of arrival.
-    @param Number depLat Departure latitude in decimal.
-    @param Number depLng Departure longitude in decimal.
-    @param Number arrLat Arrival latitude in decimal.
-    @param Number arrLng Ariival longitude in decimal.
-    @return Object Returns a object {Number night (total night time), String error (can be null)}
+    
+    /**
+    *@param Date() depDate A date object of the local time of departure.
+    *@param Date() arrDate A date object of the local time of arrival.
+    *@param Number depLat Departure latitude in decimal.
+    *@param Number depLng Departure longitude in decimal.
+    *@param Number arrLat Arrival latitude in decimal.
+    *@param Number arrLng Ariival longitude in decimal.
+    *@return Object Returns a object {Number night (total night time), String error (can be null)}
+    **/
 
     let nightCalculation = nightCalc.getTimes(depDate, arrDate, depLat, depLng, arrLat, arrLng);
 
